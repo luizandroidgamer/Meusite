@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gastos Luiz e Maria</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#eef2f5;--cd:#fff;--ink:#13202b;--mu:#667684;--ln:#dbe3e9;--lz:#2754c5;--ma:#b02a78;--in:#107a52;--ng:#c93232;--bt:#13202b;--bf:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f161d;--cd:#172029;--ink:#e8eef3;--mu:#8a98a6;--ln:#26323d;--lz:#6b95ff;--ma:#f06bb4;--in:#3fcf93;--ng:#ff7a7a;--bt:#e8eef3;--bf:#0f161d}}
+:root[data-theme="dark"]{--bg:#0f161d;--cd:#172029;--ink:#e8eef3;--mu:#8a98a6;--ln:#26323d;--lz:#6b95ff;--ma:#f06bb4;--in:#3fcf93;--ng:#ff7a7a;--bt:#e8eef3;--bf:#0f161d}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0 auto;max-width:520px;padding:12px 16px 120px;background:var(--bg);color:var(--ink);font:400 15px/1.4 "Bricolage Grotesque",system-ui,sans-serif}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer}
+.mo{display:flex;align-items:center;justify-content:space-between}
+.mo button{width:44px;height:44px;border:0;border-radius:50%;background:var(--cd);font-size:22px}
+.mo h1{margin:0;font-size:20px;font-weight:600}
+.hero{padding:22px 0 18px}.hero .n{font-size:46px;font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.hero p{margin:4px 0 0;color:var(--mu)}
+.pp{display:grid;grid-template-columns:1fr 1fr;background:var(--cd);border-radius:14px;overflow:hidden}
+.pp>div{padding:14px;border-top:4px solid var(--c)}.pp>div+div{border-left:1px solid var(--ln)}
+.pp h2{margin:0 0 8px;font-size:17px;color:var(--c)}
+.pp p{display:flex;justify-content:space-between;margin:2px 0;font-size:13px;color:var(--mu)}.pp b{color:var(--ink)}
+.pg{height:5px;border-radius:3px;background:var(--ln);margin:8px 0}.pg i{display:block;height:100%;border-radius:3px;background:var(--c)}
+.fl{display:flex;gap:8px;margin:18px 0 4px}
+.fl button{padding:7px 16px;border:1px solid var(--ln);border-radius:20px;background:none}
+.on{background:var(--bt)!important;color:var(--bf)!important;border-color:var(--bt)!important}
+.it{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--ln);cursor:pointer}
+.it i{width:4px;border-radius:2px;flex:none}.it div{flex:1;min-width:0}
+.it b{display:block;font-weight:600;overflow:hidden;text-overflow:ellipsis}.it small{color:var(--mu)}
+.it .v{flex:none;text-align:right;font-weight:600}.it .v small{display:block;font-weight:400}
+.in{color:var(--in)}.ng,.pp b.ng{color:var(--ng)}
+.em{padding:40px 0;text-align:center;color:var(--mu)}
+.fb{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:center;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.fb button{pointer-events:auto;padding:15px 28px;border:0;border-radius:30px;background:var(--bt);color:var(--bf);font-weight:600;font-size:16px;box-shadow:0 6px 20px #0003}
+#sh{position:fixed;inset:0;z-index:9;display:flex;align-items:flex-end;justify-content:center;background:#0008}
+.sheet{width:100%;max-width:520px;max-height:94vh;overflow:auto;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px));border-radius:20px 20px 0 0;background:var(--cd)}
+.f{margin-bottom:12px}.f>b{display:block;font-size:13px;font-weight:600;color:var(--mu);margin-bottom:5px}
+input,select{width:100%;padding:12px;border:1px solid var(--ln);border-radius:10px;background:var(--bg);font-size:16px}
+.sg{display:flex;gap:6px}.sg button{flex:1;padding:11px 4px;border:1px solid var(--ln);border-radius:10px;background:var(--bg)}
+.ac{display:flex;gap:10px}.ac button{flex:1;padding:14px;border:0;border-radius:12px;font-weight:600;background:var(--bg)}
+.ac #ok{flex:2;background:var(--bt);color:var(--bf)}
+.mo h1{cursor:pointer}
+.tb{display:flex;justify-content:flex-end;gap:8px;padding-top:4px}.tb button{width:36px;height:36px;border:0;border-radius:50%;background:var(--cd);font-size:16px}
+#ctw{margin-top:12px;background:var(--cd);border-radius:14px;padding:12px 14px}#ctw summary{cursor:pointer;font-weight:600;font-size:14px}
+.cb{display:grid;gap:9px;padding-top:10px}.cb div{display:grid;grid-template-columns:1fr auto;gap:3px 10px;font-size:13px}.cb i{grid-column:1/-1;height:5px;border-radius:3px;background:var(--ln)}.cb i b{display:block;height:100%;border-radius:3px;background:var(--ng)}
+.tg{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0 0;padding:12px 14px;background:var(--cd);border-radius:14px;font-size:14px;font-weight:600}
+.tg small{display:block;font-weight:400;color:var(--mu);font-size:12px}
+.tg button{width:46px;height:28px;border:0;border-radius:14px;background:var(--ln);position:relative;flex:none;transition:.2s}
+.tg button::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:#fff;transition:.2s}
+.tg button.on{background:var(--in)!important}.tg button.on::after{left:21px}
+.it.cr{cursor:default}.ng{color:var(--ng)}
+#er,#pv{display:block;font-size:13px;color:var(--mu);min-height:1em}#er{color:var(--ng);margin-bottom:8px}
+</style></head><body>
+<div class="tb"><button id="ex" title="Salvar backup" aria-label="Salvar backup">⬇️</button><button id="im" title="Restaurar backup" aria-label="Restaurar backup">⬆️</button><button id="th" aria-label="Alternar tema"></button><input type="file" id="fi" accept=".json,application/json" hidden></div>
+<div class="mo"><button id="pm" aria-label="Mês anterior">‹</button><h1 id="mn"></h1><button id="nx" aria-label="Próximo mês">›</button></div>
+<div class="hero" id="hr"></div>
+<div class="pp" id="pp"></div>
+<div class="tg"><span>Levar saldo para o mês seguinte<small>Nos fixos "todo mês" você escolhe em cada lançamento</small></span><button id="cy" role="switch"></button></div>
+<details id="ctw"><summary>Gastos por categoria</summary><div class="cb" id="cb"></div></details>
+<div class="fl" id="fl"></div>
+<div id="ls"></div>
+<div class="fb"><button id="add">+ Adicionar</button></div>
+<div id="sh" hidden><div class="sheet">
+<div class="f"><div class="sg" id="tS"></div></div>
+<div class="f"><b>Quem</b><div class="sg" id="wS"></div></div>
+<div class="f"><b>Descrição</b><input id="d" maxlength="60" placeholder="Ex.: geladeira, aluguel, salário"></div>
+<div class="f"><b id="aL"></b><input id="a" inputmode="decimal" placeholder="0,00"></div>
+<div class="f" id="cF"><b>Categoria</b><select id="c"></select></div>
+<div class="f"><b>Como é pago</b><div class="sg" id="pS"></div></div>
+<div class="f" id="nF"><b>Número de parcelas</b><input id="n" type="number" min="2" max="120" inputmode="numeric"><div class="sg" id="kS" style="margin-top:8px"></div><span id="pv"></span></div>
+<div class="f" id="cF2"><b>Somar a sobra no mês seguinte?</b><div class="sg" id="fS"></div></div>
+<div class="f"><b id="sL"></b><input id="s" type="month"></div>
+<div id="er"></div>
+<div class="ac"><button id="del">Excluir</button><button id="ok">Salvar</button></div>
+</div></div>
+<script>
+const $=s=>document.querySelector(s),
+fmt=c=>(c/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'}),
+N={L:'Luiz',M:'Maria',LM:'Os dois'},
+CT=['Moradia','Mercado','Contas (luz, água, internet)','Transporte','Saúde','Educação','Lazer e restaurantes','Cartão de crédito','Assinaturas','Roupas e calçados','Casa e eletrodomésticos','Pets','Presentes','Dívidas e empréstimos','Impostos e taxas','Outros'],
+esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),
+mi=k=>{const[a,b]=k.split('-');return a*12+ +b},
+mk=i=>Math.floor((i-1)/12)+'-'+String((i-1)%12+1).padStart(2,'0'),
+num=s=>{s=String(s).replace(/[^\d,.]/g,'');if(s.includes(','))s=s.replace(/\./g,'').replace(',','.');else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'');return Math.round(parseFloat(s)*100)||0},
+val=(r,k)=>{const d=mi(k)-mi(r.s);if(d<0)return 0;if(r.p=='u')return d?0:r.a;if(r.p=='r')return r.a;if(d>=r.n)return 0;const b=Math.floor(r.a/r.n);return d==r.n-1?r.a-b*(r.n-1):b},
+sh=(r,v)=>{const h=Math.round(v/2);return r.w=='L'?[v,0]:r.w=='M'?[0,v]:[h,v-h]};
+let D=[],C={cy:true},F={},f='all',m=new Date().toLocaleDateString('sv-SE').slice(0,7);
+try{D=JSON.parse(localStorage.getItem('gm')||'[]')}catch(e){}
+try{C={...C,...JSON.parse(localStorage.getItem('gc')||'{}')}}catch(e){}
+const save=()=>{try{localStorage.setItem('gm',JSON.stringify(D))}catch(e){}};
+$('#c').innerHTML=CT.map(c=>`<option>${c}</option>`).join('');
+const sg=(id,o,k)=>$('#'+id).innerHTML=o.map(([v,t])=>`<button data-k="${k}" data-v="${v}" class="${F[k]==v?'on':''}">${t}</button>`).join('');
+const pv=()=>{const a=num($('#a').value),n=+$('#n').value;$('#pv').textContent=F.p=='i'&&a&&n>1?(F.k=='p'?`${n}x de ${fmt(a)} = total ${fmt(a*n)}`:`${n}x de ${fmt(Math.floor(a/n))} = total ${fmt(a)}`):''};
+const sync=()=>{
+ sg('tS',[['out','Gasto'],['in','Entrada']],'t');
+ sg('wS',[['L','Luiz'],['M','Maria'],['LM','Os dois']],'w');
+ sg('kS',[['t','Informar valor total'],['p','Informar valor da parcela']],'k');
+ sg('fS',[['1','Sim, somar'],['0','Não somar']],'cf');$('#cF2').hidden=F.p!='r';
+ sg('pS',F.t=='out'?[['u','À vista'],['i','Parcelado'],['r','Todo mês']]:[['u','Só neste mês'],['r','Todo mês']],'p');
+ $('#cF').hidden=F.t!='out';$('#nF').hidden=F.p!='i';
+ $('#aL').textContent=F.p=='i'?(F.k=='p'?'Valor de cada parcela (R$)':'Valor total da compra (R$)'):F.p=='r'?'Valor por mês (R$)':'Valor (R$)';
+ $('#sL').textContent=F.p=='i'?'Mês da primeira parcela':F.p=='r'?'A partir de':'Mês';
+ pv()};
+const openF=r=>{F=r?{k:'t',...r}:{t:'out',w:'L',p:'u',k:'t'};
+ $('#d').value=r?r.d:'';$('#a').value=r?((r.p=='i'&&r.k=='p'?r.a/r.n:r.a)/100).toFixed(2).replace('.',','):'';
+ $('#c').value=r&&r.c?r.c:CT[0];$('#n').value=r&&r.p=='i'?r.n:2;$('#s').value=r?r.s:m;
+ $('#er').textContent='';const d=$('#del');d.hidden=!r;d.textContent='Excluir';d.dataset.c='';
+ if(!F.cf)F.cf=F.t=='in'?'1':'0';sync();$('#sh').hidden=false};
+$('#ok').onclick=()=>{const a=num($('#a').value),d=$('#d').value.trim();
+ if(!d||!a){$('#er').textContent='Preencha a descrição e o valor.';return}
+ const n=Math.max(2,Math.min(120,+$('#n').value||2)),
+ pi=F.p=='i',r={id:F.id||Date.now(),t:F.t,w:F.w,d,a:pi&&F.k=='p'?a*n:a,k:pi?F.k:'t',c:F.t=='out'?$('#c').value:'',cf:F.cf,p:F.p,n:F.p=='i'?n:1,s:$('#s').value||m};
+ if(F.id)D=D.map(x=>x.id==F.id?r:x);else D.push(r);
+ save();$('#sh').hidden=true;draw()};
+$('#del').onclick=e=>{const b=e.target;if(!b.dataset.c){b.dataset.c=1;b.textContent='Toque de novo para excluir';return}
+ D=D.filter(x=>x.id!=F.id);save();$('#sh').hidden=true;draw()};
+$('#sh').onclick=e=>{const b=e.target.closest('[data-k]');if(b){if(b.dataset.k=='t'&&F.t!=b.dataset.v)F.cf=b.dataset.v=='in'?'1':'0';F[b.dataset.k]=b.dataset.v;if(F.t=='in'&&F.p=='i')F.p='u';sync()}else if(e.target.id=='sh')e.target.hidden=true};
+$('#a').oninput=$('#n').oninput=pv;
+$('#add').onclick=()=>openF();
+$('#pm').onclick=()=>{m=mk(mi(m)-1);draw()};$('#nx').onclick=()=>{m=mk(mi(m)+1);draw()};
+$('#fl').onclick=e=>{const b=e.target.closest('[data-f]');if(b){f=b.dataset.f;draw()}};
+$('#cy').onclick=()=>{C.cy=!C.cy;try{localStorage.setItem('gc',JSON.stringify(C))}catch(e){}draw()};
+$('#mn').onclick=()=>{m=new Date().toLocaleDateString('sv-SE').slice(0,7);draw()};
+$('#ls').onclick=e=>{const x=e.target.closest('.it[data-id]');if(x)openF(D.find(r=>r.id==x.dataset.id))};
+const cy=r=>r.p!='r'||(r.cf?r.cf=='1':r.t=='in');
+const bal=k=>{const t=[0,0],x=[0,0];D.forEach(r=>{const v=val(r,k);if(!v)return;const q=sh(r,v),g=r.t=='in'?1:-1;for(let i=0;i<2;i++){t[i]+=g*q[i];if(cy(r))x[i]+=g*q[i]}});return x};
+const carry=()=>{const c=[0,0];if(C.cy&&D.length)for(let j=Math.min(...D.map(r=>mi(r.s)));j<mi(m);j++){const x=bal(mk(j));c[0]+=x[0];c[1]+=x[1]}return c};
+const sg2=v=>`${v<0?'−':'+'} ${fmt(Math.abs(v))}`;
+const draw=()=>{
+ const[y,mo]=m.split('-'),L=new Date(y,mo-1,1).toLocaleDateString('pt-BR',{month:'long',year:'numeric'}).replace(' de ',' ');
+ $('#mn').textContent=L[0].toUpperCase()+L.slice(1);
+ $('#cy').className=C.cy?'on':'';$('#cy').setAttribute('aria-checked',C.cy);
+ const cr=carry(),cs=cr[0]+cr[1];
+ const rows=D.map(r=>({r,v:val(r,m),i:mi(m)-mi(r.s)})).filter(x=>x.v),T={in:[0,0],out:[0,0]};
+ rows.forEach(({r,v})=>{const s=sh(r,v);T[r.t][0]+=s[0];T[r.t][1]+=s[1]});
+ const ti=T.in[0]+T.in[1],to=T.out[0]+T.out[1],sd=ti-to+cs;
+ $('#hr').innerHTML=`<div class="n ${sd<0?'ng':''}">${fmt(sd)}</div><p>Entrou ${fmt(ti)} e saiu ${fmt(to)} neste mês</p>${cs?`<p>Saldo anterior: <b class="${cs<0?'ng':'in'}">${sg2(cs)}</b></p>`:''}`;
+ $('#pp').innerHTML=[0,1].map(i=>{const a=T.in[i],o=T.out[i],c=cr[i],s=a-o+c,b=a+Math.max(c,0),u=o+Math.max(-c,0);
+  return `<div style="--c:var(--${i?'ma':'lz'})"><h2>${i?'Maria':'Luiz'}</h2>${c?`<p>Mês anterior<b class="${c<0?'ng':''}">${sg2(c)}</b></p>`:''}<p>Entrou<b>${fmt(a)}</b></p><p>Gastou<b>${fmt(o)}</b></p><div class="pg"><i style="width:${Math.min(100,b?u/b*100:u?100:0)}%"></i></div><p>${s<0?'Falta':'Sobra'}<b class="${s<0?'ng':''}">${fmt(Math.abs(s))}</b></p></div>`}).join('');
+ $('#fl').innerHTML=[['all','Todos'],['L','Luiz'],['M','Maria']].map(([v,t])=>`<button data-f="${v}" class="${f==v?'on':''}">${t}</button>`).join('');
+ const vis=rows.filter(x=>f=='all'||x.r.w==f||x.r.w=='LM').sort((a,b)=>(a.r.t=='in'?0:1)-(b.r.t=='in'?0:1)||a.r.id-b.r.id);
+ const cv=f=='all'?cs:cr[f=='L'?0:1],
+ ch=cv?`<div class="it cr"><i style="background:var(--mu)"></i><div><b>Saldo do mês anterior</b><small>${f=='all'?'Luiz e Maria':N[f]}, transferido</small></div><div class="v ${cv<0?'ng':'in'}">${sg2(cv)}</div></div>`:'';
+ $('#ls').innerHTML=ch+vis.map(({r,v,i})=>{const w=f=='all'?v:sh(r,v)[f=='L'?0:1],col=r.w=='LM'?'linear-gradient(var(--lz) 50%,var(--ma) 50%)':`var(--${r.w=='L'?'lz':'ma'})`;
+  return `<div class="it" data-id="${r.id}"><i style="background:${col}"></i><div><b>${esc(r.d)}</b><small>${N[r.w]}, ${r.t=='in'?'entrada':esc(r.c)}</small></div><div class="v ${r.t=='in'?'in':''}">${r.t=='in'?'+':'−'} ${fmt(w)}${r.p=='i'?`<small>parcela ${i+1}/${r.n}</small>`:r.p=='r'?'<small>todo mês</small>':''}</div></div>`}).join('')||'<div class="em">Nada neste mês ainda. Toque em Adicionar para lançar uma entrada ou um gasto.</div>';
+ const ct={};rows.filter(x=>x.r.t=='out'&&(f=='all'||x.r.w==f||x.r.w=='LM')).forEach(({r,v})=>{const w=f=='all'?v:sh(r,v)[f=='L'?0:1];ct[r.c]=(ct[r.c]||0)+w});
+ const ce=Object.entries(ct).filter(e=>e[1]).sort((a,b)=>b[1]-a[1]),mx=ce[0]?ce[0][1]:1;
+ $('#ctw').hidden=!ce.length;$('#cb').innerHTML=ce.map(([c,w])=>`<div><span>${esc(c)}</span><b>${fmt(w)}</b><i><b style="width:${w/mx*100}%"></b></i></div>`).join('');
+};
+const root=document.documentElement,dk=()=>root.dataset.theme?root.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches,
+ic=()=>$('#th').textContent=dk()?'☀️':'🌙';
+try{const t=localStorage.getItem('gt');if(t)root.dataset.theme=t}catch(e){}
+$('#th').onclick=()=>{const t=dk()?'light':'dark';root.dataset.theme=t;try{localStorage.setItem('gt',t)}catch(e){}ic()};ic();
+$('#ex').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(D)],{type:'application/json'}));a.download='gastos-backup.json';a.click()};
+$('#im').onclick=()=>$('#fi').click();
+$('#fi').onchange=e=>{const fl=e.target.files[0];e.target.value='';if(!fl)return;fl.text().then(t=>{try{const x=JSON.parse(t);if(!Array.isArray(x)||!x.every(r=>r&&r.a!=null&&r.s))throw 0;if(confirm('Substituir os dados atuais pelo backup?')){D=x;save();draw()}}catch(er){alert('Arquivo de backup inválido.')}})};
+draw();
+</script></body></html>
